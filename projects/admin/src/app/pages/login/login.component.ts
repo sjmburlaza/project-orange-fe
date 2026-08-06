@@ -7,11 +7,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { ActivatedRoute, Router } from '@angular/router';
 import { finalize } from 'rxjs';
-import { ROLES } from '@orange/models';
-import { AuthSession } from '@orange/models';
-import { AuthService } from '@orange/core';
-import { AuthStore } from '@orange/core';
-import { emailValidator } from '@orange/shared';
+import { ROLES } from '@orange/core/models';
+import { AuthSession } from '@orange/core/models';
+import { AuthService } from '@orange/core/auth';
+import { AuthStore } from '@orange/core/auth';
+import { emailValidator } from '@orange/shared/validators';
 
 @Component({
   selector: 'app-login',

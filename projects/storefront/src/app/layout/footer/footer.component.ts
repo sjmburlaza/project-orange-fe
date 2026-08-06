@@ -1,5 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import footerCnMockData from 'src/assets/mock/footer/footer.cn.json';
 import footerFrMockData from 'src/assets/mock/footer/footer.fr.json';
 import footerJpMockData from 'src/assets/mock/footer/footer.jp.json';

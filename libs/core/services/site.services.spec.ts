@@ -4,7 +4,7 @@ import {
   provideHttpClientTesting,
 } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { SiteConfig } from '../i18n/sites';
+import { SiteConfig } from '@orange/core/i18n';
 import { SiteService } from './site.services';
 
 const phSite: SiteConfig = {

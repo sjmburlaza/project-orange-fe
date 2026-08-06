@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CartFacade } from '../../cart/store/cart.facade';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import { AsyncPipe, CurrencyPipe } from '@angular/common';
-import { IconPipe } from '@orange/shared';
+import { IconPipe } from '@orange/shared/pipes';
 import { TranslatePipe } from '@ngx-translate/core';
-import { IconColorPipe } from '@orange/shared';
-import { ConfirmDialogComponent } from '@orange/ui';
+import { IconColorPipe } from '@orange/shared/pipes';
+import { ConfirmDialogComponent } from '@orange/ui/confirm-dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 

@@ -17,14 +17,14 @@ import {
   withInterceptorsFromDi,
   withXsrfConfiguration,
 } from '@angular/common/http';
-import { ApiSitePrefixInterceptor } from '@orange/core';
-import { AuthInterceptor } from '@orange/core';
-import { MockAuthInterceptor } from '@orange/core';
-import { MockPaymentInterceptor } from '@orange/core';
-import { AuthService } from '@orange/core';
-import { AuthStore } from '@orange/core';
+import { ApiSitePrefixInterceptor } from '@orange/core/interceptors';
+import { AuthInterceptor } from '@orange/core/interceptors';
+import { MockAuthInterceptor } from '@orange/core/interceptors';
+import { MockPaymentInterceptor } from '@orange/core/interceptors';
+import { AuthService } from '@orange/core/auth';
+import { AuthStore } from '@orange/core/auth';
 import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
-import { MultiTranslateLoader } from '@orange/core';
+import { MultiTranslateLoader } from '@orange/core/i18n';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
@@ -41,8 +41,8 @@ import {
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { catchError, firstValueFrom, map, of, switchMap, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { SiteService } from '@orange/core';
-import { normalizeSiteCode, SiteConfig } from '@orange/core';
+import { SiteService } from '@orange/core/services';
+import { normalizeSiteCode, SiteConfig } from '@orange/core/i18n';
 import {
   ArcElement,
   BarController,

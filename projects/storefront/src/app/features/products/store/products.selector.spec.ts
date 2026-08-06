@@ -4,7 +4,7 @@ import {
   Product,
   ProductConfigure,
   ProductVariant,
-} from '@orange/models';
+} from '@orange/core/models';
 import {
   selectInsurancePlansForProduct,
   selectMobilePlansForProduct,

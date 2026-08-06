@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { AsyncValidatorFn, AbstractControl } from '@angular/forms';
 import { of, map, catchError } from 'rxjs';
-import { PostalCodeService } from '@orange/core';
+import { PostalCodeService } from '@orange/core/services';
 
 @Injectable({ providedIn: 'root' })
 export class AsyncValidatorMapperService {

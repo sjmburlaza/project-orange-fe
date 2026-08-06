@@ -1,5 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { ProductOptionGroup } from '@orange/models';
+
+interface ColorOptionGroup {
+  code: string;
+  options: ColorOption[];
+}
+
+interface ColorOption {
+  code: string;
+  hex?: string;
+}
 
 @Pipe({
   name: 'variantColor',
@@ -7,7 +16,7 @@ import { ProductOptionGroup } from '@orange/models';
 export class VariantColorPipe implements PipeTransform {
   transform(
     selectedOptions: Record<string, string> | null | undefined,
-    optionGroups: ProductOptionGroup[] | null | undefined,
+    optionGroups: ColorOptionGroup[] | null | undefined,
     groupCode = 'color',
   ): string | null {
     const selectedOptionCode = selectedOptions?.[groupCode];

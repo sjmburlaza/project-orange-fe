@@ -8,9 +8,9 @@ import {
   UpdateCartShippingRequest,
   UpdateCartItemAddonRequest,
   UpdateQuantityRequest,
-} from '@orange/models';
-import { ProductConfigure } from '@orange/models';
-import { BrowserStorageService } from '@orange/core';
+} from '@orange/core/models';
+import { ProductConfigure } from '@orange/core/models';
+import { BrowserStorageService } from '@orange/core/services';
 
 @Injectable({ providedIn: 'root' })
 export class CartApiService {

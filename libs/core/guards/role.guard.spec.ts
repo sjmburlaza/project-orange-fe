@@ -7,10 +7,10 @@ import {
   UrlTree,
 } from '@angular/router';
 import { firstValueFrom, Observable, of, throwError } from 'rxjs';
-import { ROLES } from '@orange/models';
-import { AuthSession } from '@orange/models';
-import { AuthService } from '../auth/auth.service';
-import { AuthStore } from '../auth/auth.store';
+import { ROLES } from '@orange/core/models';
+import { AuthSession } from '@orange/core/models';
+import { AuthService } from '@orange/core/auth';
+import { AuthStore } from '@orange/core/auth';
 
 import { AUTH_GUARD_REDIRECTS, AuthGuardRedirects } from './auth-guard-redirects';
 import { RoleGuard } from './role.guard';

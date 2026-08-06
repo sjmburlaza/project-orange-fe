@@ -12,13 +12,13 @@ import {
 } from '@angular/core';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 import {
   FulfillmentService,
   FulfillmentOption,
   FulfillmentType,
 } from '../../services/fulfillment.service';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { TranslatePipe } from '@ngx-translate/core';
 

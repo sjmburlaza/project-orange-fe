@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import {
   AnalyticsDashboard,
   AnalyticsMetricCard,
-} from '@orange/models';
-import { InfoTooltipComponent } from '@orange/ui';
+} from '@orange/core/models';
+import { InfoTooltipComponent } from '@orange/ui/info-tooltip';
 import { barWidth } from '../dashboard-tab.utils';
 
 @Component({

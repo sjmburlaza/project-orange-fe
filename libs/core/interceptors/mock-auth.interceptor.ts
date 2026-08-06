@@ -8,15 +8,15 @@ import {
 } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { delay, Observable, of, throwError } from 'rxjs';
-import { PERMISSIONS, ROLES } from '@orange/models';
+import { PERMISSIONS, ROLES } from '@orange/core/models';
 import {
   AuthSession,
   ForgotPasswordDto,
   LoginDto,
   ResetPasswordDto,
   User,
-} from '@orange/models';
-import { SiteService } from '../services/site.services';
+} from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 
 @Injectable()
 export class MockAuthInterceptor implements HttpInterceptor {

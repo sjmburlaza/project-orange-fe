@@ -6,11 +6,6 @@
     "declarationMap": true,
     "inlineSources": true,
     "sourceMap": true,
-    "paths": {
-      "@orange/models": [
-        "../../dist/libs/models"
-      ]
-    },
     "types": []
   },
   "include": [

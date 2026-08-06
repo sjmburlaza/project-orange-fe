@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
-import { Cart } from '@orange/models';
+import { Cart } from '@orange/core/models';
 import {
   ProductConfigure,
   ProductVariant,
-} from '@orange/models';
-import { SiteService } from '@orange/core';
+} from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 import { CartFacade } from 'src/app/features/cart/store/cart.facade';
 import { vi } from 'vitest';
 

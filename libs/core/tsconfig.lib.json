@@ -7,11 +7,11 @@
     "inlineSources": true,
     "sourceMap": true,
     "paths": {
-      "@orange/models": [
-        "../../dist/libs/models"
-      ],
       "@orange/shared": [
         "../../dist/libs/shared"
+      ],
+      "@orange/shared/*": [
+        "../../dist/libs/shared/*"
       ]
     },
     "types": []

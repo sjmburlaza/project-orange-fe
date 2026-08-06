@@ -30,24 +30,24 @@ import {
   CheckoutStep,
   DynamicField,
   DynamicFormObject,
-} from '@orange/models';
+} from '@orange/core/models';
 import { DynamicFormComponent } from '../components/dynamic-form/dynamic-form.component';
 import { ShippingStepComponent } from '../components/shipping-step/shipping-step.component';
 import { PaymentStepComponent } from '../components/payment-step/payment-step.component';
 import { CheckoutStorageService } from '../services/checkout-storage.service';
 import { CartFacade } from '../../cart/store/cart.facade';
 import { OrderService } from 'src/app/features/orders/services/order.service';
-import { SiteService } from '@orange/core';
-import { AnalyticsService } from '@orange/core';
-import { Cart } from '@orange/models';
+import { SiteService } from '@orange/core/services';
+import { AnalyticsService } from '@orange/core/services';
+import { Cart } from '@orange/core/models';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AuthStore } from '@orange/core';
+import { AuthStore } from '@orange/core/auth';
 import {
   PaymentConfirmation,
   PaymentIntent,
   PaymentStepValue,
-} from '@orange/models';
-import { OrderConfirmation } from '@orange/models';
+} from '@orange/core/models';
+import { OrderConfirmation } from '@orange/core/models';
 
 type CheckoutStepComponent =
   | DynamicFormComponent

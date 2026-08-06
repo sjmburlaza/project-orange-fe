@@ -1,5 +1,5 @@
 import { createSelector } from '@ngrx/store';
-import { ProductFilters } from '@orange/models';
+import { ProductFilters } from '@orange/core/models';
 import { productFeature } from 'src/app/features/products/store/products.reducer';
 
 export const {

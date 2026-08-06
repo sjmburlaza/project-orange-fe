@@ -4,8 +4,8 @@ import type { ComponentFixture } from '@angular/core/testing';
 import {
   AnalyticsDashboard,
   AnalyticsMetricCard,
-} from '@orange/models';
-import { WHITESPACE_PATTERN } from '@orange/shared';
+} from '@orange/core/models';
+import { WHITESPACE_PATTERN } from '@orange/shared/constants';
 
 export async function renderTab<T>(
   component: Type<T>,

@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { AddonDialogData } from '../addon/addon-dialog-data.model';
 import { ProductFacade } from 'src/app/features/products/store/products.facade';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 
 @Component({
   selector: 'app-addon-insurance',

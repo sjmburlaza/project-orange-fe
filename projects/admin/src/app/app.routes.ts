@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { ROLES } from '@orange/models';
-import { AuthGuard } from '@orange/core';
-import { RoleGuard } from '@orange/core';
+import { ROLES } from '@orange/core/models';
+import { AuthGuard } from '@orange/core/guards';
+import { RoleGuard } from '@orange/core/guards';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'admin/analytics', pathMatch: 'full' },

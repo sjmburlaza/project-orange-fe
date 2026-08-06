@@ -10,7 +10,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {
   AnalyticsDashboardPeriod,
   AnalyticsMetricCard,
-} from '@orange/models';
+} from '@orange/core/models';
 import {
   ArcElement,
   BarController,
@@ -26,12 +26,12 @@ import {
   Tooltip,
 } from 'chart.js';
 import { provideCharts } from 'ng2-charts';
-import { AnalyticsService } from '@orange/core';
-import { SiteService } from '@orange/core';
+import { AnalyticsService } from '@orange/core/services';
+import { SiteService } from '@orange/core/services';
 import {
   SelectDropdownComponent,
   SelectOption,
-} from '@orange/ui';
+} from '@orange/ui/select-dropdown';
 import { FunnelTabComponent } from './components/funnel-tab/funnel-tab.component';
 import { OrdersTabComponent } from './components/orders-tab/orders-tab.component';
 import { OverviewTabComponent } from './components/overview-tab/overview-tab.component';

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { CheckboxFieldComponent } from './checkbox-field.component';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 
 describe('CheckboxFieldComponent', () => {
   let component: CheckboxFieldComponent;

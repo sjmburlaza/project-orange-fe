@@ -243,37 +243,6 @@
         }
       }
     },
-    "orange-models": {
-      "projectType": "library",
-      "root": "libs/models",
-      "sourceRoot": "libs/models",
-      "prefix": "orange",
-      "architect": {
-        "build": {
-          "builder": "@angular/build:ng-packagr",
-          "options": {
-            "project": "libs/models/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "libs/models/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "libs/models/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/models/**/*.ts"
-            ]
-          }
-        }
-      }
-    },
     "orange-shared": {
       "projectType": "library",
       "root": "libs/shared",

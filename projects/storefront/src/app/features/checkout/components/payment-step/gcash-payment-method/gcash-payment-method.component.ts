@@ -18,8 +18,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { TranslatePipe } from '@ngx-translate/core';
-import { PaymentStepValue } from '@orange/models';
-import { GCASH_MOBILE_NUMBER_PATTERN } from '@orange/shared';
+import { PaymentStepValue } from '@orange/core/models';
+import { GCASH_MOBILE_NUMBER_PATTERN } from '@orange/shared/constants';
 import {
   PaymentMethodFormComponent,
   WalletPaymentFormGroup,

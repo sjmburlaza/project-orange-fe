@@ -9,7 +9,7 @@ import {
   ProductConfigure,
   ProductFilters,
   ProductOptionsResponse,
-} from '@orange/models';
+} from '@orange/core/models';
 
 @Injectable({
   providedIn: 'root',

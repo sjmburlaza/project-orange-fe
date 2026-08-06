@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import { provideTranslateService } from '@ngx-translate/core';
-import { OrderItem } from '@orange/models';
-import { SiteService } from '@orange/core';
+import { OrderItem } from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 import { OrderItemComponent } from 'src/app/features/orders/components/order-item/order-item.component';
 
 import { OrdersHistoryComponent } from './orders-history.component';

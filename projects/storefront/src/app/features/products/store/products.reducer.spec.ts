@@ -3,7 +3,7 @@ import {
   Product,
   ProductConfigure,
   ProductVariant,
-} from '@orange/models';
+} from '@orange/core/models';
 import { ProductActions } from './products.actions';
 import { initialState, productFeature } from './products.reducer';
 

@@ -1,16 +1,16 @@
-import type { Category } from '@orange/models';
+import type { Category } from '@orange/core/models';
 import type {
   Cart,
   CartItem,
   Voucher,
-} from '@orange/models';
-import type { CheckoutFormConfig } from '@orange/models';
+} from '@orange/core/models';
+import type { CheckoutFormConfig } from '@orange/core/models';
 import type {
   Product,
   ProductConfigure,
   ProductVariant,
   StockStatus,
-} from '@orange/models';
+} from '@orange/core/models';
 import type { FulfillmentOption } from '../../projects/storefront/src/app/features/checkout/services/fulfillment.service';
 
 export const categories: Category[] = [

@@ -11,15 +11,15 @@ import {
   ProductOption,
   ProductVariant,
   StockStatus,
-} from '@orange/models';
-import { AnalyticsService } from '@orange/core';
-import { SiteService } from '@orange/core';
+} from '@orange/core/models';
+import { AnalyticsService } from '@orange/core/services';
+import { SiteService } from '@orange/core/services';
 import { CartFacade } from 'src/app/features/cart/store/cart.facade';
 import { ProductFacade } from 'src/app/features/products/store/products.facade';
-import { ConfirmDialogComponent } from '@orange/ui';
-import { QuantitySelectorComponent } from '@orange/ui';
-import { IconPipe } from '@orange/shared';
-import { VariantColorPipe } from '@orange/shared';
+import { ConfirmDialogComponent } from '@orange/ui/confirm-dialog';
+import { QuantitySelectorComponent } from '@orange/ui/quantity-selector';
+import { IconPipe } from '@orange/shared/pipes';
+import { VariantColorPipe } from '@orange/shared/pipes';
 
 @Component({
   selector: 'app-product-configurator',

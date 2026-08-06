@@ -10,21 +10,21 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslatePipe } from '@ngx-translate/core';
 import { BehaviorSubject, distinctUntilChanged, filter, map } from 'rxjs';
-import { Cart } from '@orange/models';
+import { Cart } from '@orange/core/models';
 import {
   ProductConfigure,
   ProductOption,
   ProductOptionGroup,
   ProductVariant,
-} from '@orange/models';
-import { SiteService } from '@orange/core';
+} from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 import { CartFacade } from 'src/app/features/cart/store/cart.facade';
 import {
   CarouselComponent,
   CarouselItemDirective,
-} from '@orange/ui';
-import { IconPipe } from '@orange/shared';
-import { VariantColorPipe } from '@orange/shared';
+} from '@orange/ui/carousel';
+import { IconPipe } from '@orange/shared/pipes';
+import { VariantColorPipe } from '@orange/shared/pipes';
 
 interface RecommendedProductState {
   selectedOptions: Record<string, string>;

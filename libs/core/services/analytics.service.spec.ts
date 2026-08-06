@@ -4,10 +4,10 @@ import {
   provideHttpClientTesting,
 } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { AnalyticsDashboard } from '@orange/models';
-import { Cart } from '@orange/models';
-import { OrderConfirmation } from '@orange/models';
-import { Product } from '@orange/models';
+import { AnalyticsDashboard } from '@orange/core/models';
+import { Cart } from '@orange/core/models';
+import { OrderConfirmation } from '@orange/core/models';
+import { Product } from '@orange/core/models';
 import { AnalyticsService } from './analytics.service';
 
 describe('AnalyticsService', () => {

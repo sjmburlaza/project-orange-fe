@@ -23,7 +23,7 @@ import {
   DynamicField,
   DynamicFormObject,
   DynamicFormValue,
-} from '@orange/models';
+} from '@orange/core/models';
 import { DynamicFieldComponent } from '../dynamic-field/dynamic-field.component';
 import { ValidatorMapperService } from '../../services/validator-mapper.service';
 import { AsyncValidatorMapperService } from '../../services/async-validator-mapper.service';

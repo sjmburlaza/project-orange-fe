@@ -1,22 +1,22 @@
 import { AsyncPipe, getCurrencySymbol } from '@angular/common';
 import { Component, computed, DestroyRef, inject, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AuthStore } from '@orange/core';
-import { Category } from '@orange/models';
-import { Product, ProductSort } from '@orange/models';
-import { SiteService } from '@orange/core';
-import { AnalyticsService } from '@orange/core';
+import { AuthStore } from '@orange/core/auth';
+import { Category } from '@orange/core/models';
+import { Product, ProductSort } from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
+import { AnalyticsService } from '@orange/core/services';
 import { WishlistService } from 'src/app/features/profile/services/wishlist.service';
 import { ProductCardComponent } from 'src/app/features/products/components/product-card/product-card.component';
 import { ProductFacade } from 'src/app/features/products/store/products.facade';
 import { ProductListToolbarComponent } from 'src/app/features/products/components/product-list-toolbar/product-list-toolbar.component';
-import { RangeValue } from '@orange/ui';
-import { FilterDropdownOption } from '@orange/ui';
+import { RangeValue } from '@orange/ui/range-slider';
+import { FilterDropdownOption } from '@orange/ui/filter-dropdown';
 import {
   DIACRITICS_PATTERN,
   LEADING_OR_TRAILING_HYPHENS_PATTERN,
   NON_ALPHANUMERIC_PATTERN,
-} from '@orange/shared';
+} from '@orange/shared/constants';
 import {
   combineLatest,
   debounceTime,
@@ -30,7 +30,7 @@ import {
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ConfirmDialogComponent } from '@orange/ui';
+import { ConfirmDialogComponent } from '@orange/ui/confirm-dialog';
 
 @Component({
   selector: 'app-product-list',

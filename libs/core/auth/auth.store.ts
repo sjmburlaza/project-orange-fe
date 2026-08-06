@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { distinctUntilChanged, map } from 'rxjs/operators';
-import { AuthSession } from '@orange/models';
+import { AuthSession } from '@orange/core/models';
 
 export type AuthSessionState = AuthSession | null | undefined;
 

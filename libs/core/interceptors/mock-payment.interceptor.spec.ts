@@ -9,7 +9,7 @@ import { firstValueFrom } from 'rxjs';
 import {
   PaymentConfirmation,
   PaymentIntent,
-} from '@orange/models';
+} from '@orange/core/models';
 import { MockPaymentInterceptor } from './mock-payment.interceptor';
 
 describe('MockPaymentInterceptor', () => {
