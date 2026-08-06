@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import { of } from 'rxjs';
 import { ProductApiService } from 'src/app/features/products/services/product-api.service';
 

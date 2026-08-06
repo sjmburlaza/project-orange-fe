@@ -273,10 +273,8 @@ libs/core
   guards/           Auth, role, and site route guards
   i18n/             Site types and multi-file translation loader
   interceptors/     API site prefixing, auth, and mock auth
+  models/           Shared API/domain contracts, auth contracts, roles, and permissions
   services/         Analytics, site, storage, country detection, and postal code services
-
-libs/models
-  Shared API and domain contracts, including auth roles and permissions
 
 libs/shared
   constants/        Shared regex and validation constants
@@ -315,14 +313,15 @@ projects/admin/src/app
 
 ## Workspace Libraries
 
-Application and library consumers import shared code only through these public entry points:
+Application and library consumers import shared code through folder-specific public entry points:
 
-| Entry point       | Ownership                                                               |
-| ----------------- | ----------------------------------------------------------------------- |
-| `@orange/models`  | Framework-free API/domain contracts, auth contracts, roles, permissions |
-| `@orange/shared`  | Directives, pipes, validators, and constants                             |
-| `@orange/ui`      | Reusable standalone UI components                                       |
-| `@orange/core`    | Angular services, auth state, guards, interceptors, and i18n             |
+| Entry-point pattern       | Available folders                                                        |
+| ------------------------- | ------------------------------------------------------------------------ |
+| `@orange/core/<folder>`   | `auth`, `guards`, `i18n`, `interceptors`, `models`, `services`            |
+| `@orange/shared/<folder>` | `constants`, `directives`, `pipes`, `validators`                          |
+| `@orange/ui/<folder>`     | One folder per reusable UI component, such as `button` or `select-dropdown` |
+
+For example, import `AnalyticsDashboard` from `@orange/core/models`, `SiteService` from `@orange/core/services`, and `IconPipe` from `@orange/shared/pipes`.
 
 Do not import implementation files through `libs/...`. Build and lint the package boundaries with `npm run build:libs` and `npm run lint:libs`.
 

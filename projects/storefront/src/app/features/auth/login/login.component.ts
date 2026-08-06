@@ -11,11 +11,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ROLES } from '@orange/models';
-import { AuthSession } from '@orange/models';
-import { AuthService } from '@orange/core';
-import { AuthStore } from '@orange/core';
-import { SiteService } from '@orange/core';
+import { ROLES } from '@orange/core/models';
+import { AuthSession } from '@orange/core/models';
+import { AuthService } from '@orange/core/auth';
+import { AuthStore } from '@orange/core/auth';
+import { SiteService } from '@orange/core/services';
 
 @Component({
   selector: 'app-login',

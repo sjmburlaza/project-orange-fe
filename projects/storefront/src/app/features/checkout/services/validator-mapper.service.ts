@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ValidatorFn, Validators } from '@angular/forms';
-import { FieldValidator } from '@orange/models';
+import { FieldValidator } from '@orange/core/models';
 
 @Injectable({ providedIn: 'root' })
 export class ValidatorMapperService {

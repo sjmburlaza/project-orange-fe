@@ -16,8 +16,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 import {
   AuthSessionState,
   AuthStore,
-} from '@orange/core';
-import { OrderItem } from '@orange/models';
+} from '@orange/core/auth';
+import { OrderItem } from '@orange/core/models';
 import { OrderItemComponent } from 'src/app/features/orders/components/order-item/order-item.component';
 import { OrdersHistoryComponent } from 'src/app/features/orders/components/orders-history/orders-history.component';
 import { OrderService } from 'src/app/features/orders/services/order.service';

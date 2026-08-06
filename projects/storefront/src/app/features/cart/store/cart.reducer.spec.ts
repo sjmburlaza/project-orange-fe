@@ -1,5 +1,5 @@
-import { Cart } from '@orange/models';
-import { ProductConfigure } from '@orange/models';
+import { Cart } from '@orange/core/models';
+import { ProductConfigure } from '@orange/core/models';
 import { CartActions } from './cart.actions';
 import { cartFeature, initialCartState } from './cart.reducer';
 

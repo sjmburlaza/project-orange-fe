@@ -7,14 +7,20 @@
       "@orange/core": [
         "./libs/core/public-api.ts"
       ],
-      "@orange/models": [
-        "./libs/models/public-api.ts"
+      "@orange/core/*": [
+        "./libs/core/*/public-api.ts"
       ],
       "@orange/shared": [
         "./libs/shared/public-api.ts"
       ],
+      "@orange/shared/*": [
+        "./libs/shared/*/public-api.ts"
+      ],
       "@orange/ui": [
         "./libs/ui/public-api.ts"
+      ],
+      "@orange/ui/*": [
+        "./libs/ui/*/public-api.ts"
       ],
       "src/*": [
         "./projects/storefront/src/*"
@@ -56,9 +62,6 @@
     },
     {
       "path": "./projects/admin/tsconfig.spec.json"
-    },
-    {
-      "path": "./libs/models/tsconfig.lib.json"
     },
     {
       "path": "./libs/shared/tsconfig.lib.json"

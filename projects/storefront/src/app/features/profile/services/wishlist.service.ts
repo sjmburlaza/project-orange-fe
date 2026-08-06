@@ -6,7 +6,7 @@ import {
   AddWishlistItemRequest,
   WishlistResponse,
   WishlistStatus,
-} from '@orange/models';
+} from '@orange/core/models';
 
 @Injectable({ providedIn: 'root' })
 export class WishlistService {

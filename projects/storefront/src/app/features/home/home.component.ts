@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 
 interface HomeCategory {
   readonly nameKey: string;

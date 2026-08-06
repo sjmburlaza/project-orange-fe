@@ -1,8 +1,8 @@
 import { createFeature, createReducer, on } from '@ngrx/store';
-import { Cart } from '@orange/models';
+import { Cart } from '@orange/core/models';
 import { CartActions } from './cart.actions';
-import { CartUiMessage } from '@orange/models';
-import { ProductConfigure } from '@orange/models';
+import { CartUiMessage } from '@orange/core/models';
+import { ProductConfigure } from '@orange/core/models';
 
 export interface CartState {
   cart: Cart | null;

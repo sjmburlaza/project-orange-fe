@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { PaymentStepValue } from '@orange/models';
+import { PaymentStepValue } from '@orange/core/models';
 import { PaymentMethodFormComponent } from '../payment-form.model';
 import { CardPaymentMethodComponent } from '../card-payment-method/card-payment-method.component';
 

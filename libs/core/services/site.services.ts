@@ -4,7 +4,7 @@ import {
   normalizeSiteCode,
   SiteCode,
   SiteConfig,
-} from '../i18n/sites';
+} from '@orange/core/i18n';
 import { BrowserStorageService } from './browser-storage.service';
 import { map, Observable, tap } from 'rxjs';
 

@@ -7,8 +7,8 @@ import {
   UrlTree,
 } from '@angular/router';
 import { catchError, map, Observable, of, tap } from 'rxjs';
-import { AuthService } from '../auth/auth.service';
-import { AuthStore } from '../auth/auth.store';
+import { AuthService } from '@orange/core/auth';
+import { AuthStore } from '@orange/core/auth';
 import { AUTH_GUARD_REDIRECTS } from './auth-guard-redirects';
 
 @Injectable({ providedIn: 'root' })

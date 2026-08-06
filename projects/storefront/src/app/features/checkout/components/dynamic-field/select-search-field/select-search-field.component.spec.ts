@@ -4,7 +4,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { of } from 'rxjs';
 
 import { SelectSearchFieldComponent } from './select-search-field.component';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 import { OptionsService } from 'src/app/features/checkout/services/options.service';
 
 describe('SelectSearchFieldComponent', () => {

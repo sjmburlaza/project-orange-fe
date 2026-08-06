@@ -1,9 +1,7 @@
-import { ProductOptionGroup } from '@orange/models';
-
 import { VariantColorPipe } from './variant-color-pipe';
 
 describe('VariantColorPipe', () => {
-  const optionGroups: ProductOptionGroup[] = [
+  const optionGroups = [
     {
       code: 'color',
       label: 'Color',

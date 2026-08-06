@@ -2,7 +2,6 @@
   "name": "project-orange-v2",
   "version": "0.0.0",
   "workspaces": [
-    "libs/models",
     "libs/shared",
     "libs/ui",
     "libs/core"
@@ -13,7 +12,7 @@
     "mock:api": "node mock-api/server.cjs",
     "start:e2e": "ng serve project-orange-storefront --configuration e2e",
     "build": "ng build project-orange-storefront",
-    "build:libs": "ng build orange-models && ng build orange-shared && ng build orange-ui && ng build orange-core",
+    "build:libs": "ng build orange-shared && ng build orange-ui && ng build orange-core",
     "build:all": "npm run build:libs && ng build project-orange-storefront && ng build project-orange-admin",
     "watch": "ng build project-orange-storefront --watch --configuration development",
     "test": "ng test project-orange-storefront",
@@ -23,7 +22,7 @@
     "e2e:ui": "playwright test --ui",
     "e2e:headed": "playwright test --headed",
     "lint": "ng lint project-orange-storefront",
-    "lint:libs": "ng lint orange-models && ng lint orange-shared && ng lint orange-ui && ng lint orange-core",
+    "lint:libs": "ng lint orange-shared && ng lint orange-ui && ng lint orange-core",
     "dev:ssr": "ng serve project-orange-storefront",
     "build:ssr": "ng build project-orange-storefront",
     "serve:ssr:project-orange-storefront": "node dist/project-orange-storefront/server/server.mjs"

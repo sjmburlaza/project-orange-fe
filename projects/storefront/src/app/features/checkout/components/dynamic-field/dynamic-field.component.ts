@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 import { GroupFieldComponent } from './group-field/group-field.component';
 import { InputFieldComponent } from './input-field/input-field.component';
 import { ArrayFieldComponent } from './array-field/array-field.component';

@@ -1,5 +1,5 @@
 import { Injectable, inject, signal } from '@angular/core';
-import { BrowserStorageService } from '@orange/core';
+import { BrowserStorageService } from '@orange/core/services';
 
 type CheckoutData = Record<string, Record<string, unknown>>;
 

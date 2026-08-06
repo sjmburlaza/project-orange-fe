@@ -2,11 +2,11 @@ import { AsyncPipe, CurrencyPipe, DatePipe } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { StockStatus } from '@orange/models';
-import { WishlistProductSummary } from '@orange/models';
-import { SiteService } from '@orange/core';
+import { StockStatus } from '@orange/core/models';
+import { WishlistProductSummary } from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 import { WishlistService } from 'src/app/features/profile/services/wishlist.service';
-import { IconPipe } from '@orange/shared';
+import { IconPipe } from '@orange/shared/pipes';
 
 @Component({
   selector: 'app-wishlist',

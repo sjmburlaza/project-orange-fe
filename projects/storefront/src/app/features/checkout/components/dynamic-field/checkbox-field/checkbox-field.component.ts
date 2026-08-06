@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 
 @Component({
   selector: 'app-checkbox-field',

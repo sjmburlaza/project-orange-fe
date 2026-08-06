@@ -16,10 +16,10 @@ import {
   TradeInSession,
   TradeInStepThreeField,
   TradeInStorage,
-} from '@orange/models';
+} from '@orange/core/models';
 import { TradeInFacade } from 'src/app/features/trade-in/store/trade-in.facade';
 import { AddonDialogData } from '../addon/addon-dialog-data.model';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 
 @Component({
   selector: 'app-addon-tradein',

@@ -7,8 +7,8 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SiteCode } from '../i18n/sites';
-import { SiteService } from '../services/site.services';
+import { SiteCode } from '@orange/core/i18n';
+import { SiteService } from '@orange/core/services';
 
 @Injectable()
 export class ApiSitePrefixInterceptor implements HttpInterceptor {

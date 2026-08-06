@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CheckoutFormConfig } from '@orange/models';
+import { CheckoutFormConfig } from '@orange/core/models';
 
 @Injectable({ providedIn: 'root' })
 export class CheckoutApiService {

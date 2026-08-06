@@ -1,6 +1,6 @@
 import { DecimalPipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { AnalyticsDashboard } from '@orange/models';
+import { AnalyticsDashboard } from '@orange/core/models';
 import { barWidth } from '../dashboard-tab.utils';
 
 @Component({

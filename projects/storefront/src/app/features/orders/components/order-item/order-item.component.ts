@@ -8,10 +8,10 @@ import {
   OrderItem,
   OrderStatus,
   PaymentStatus,
-} from '@orange/models';
-import { SiteService } from '@orange/core';
-import { IconColorPipe } from '@orange/shared';
-import { IconPipe } from '@orange/shared';
+} from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
+import { IconColorPipe } from '@orange/shared/pipes';
+import { IconPipe } from '@orange/shared/pipes';
 
 type DisplayStatus = OrderStatus | PaymentStatus;
 

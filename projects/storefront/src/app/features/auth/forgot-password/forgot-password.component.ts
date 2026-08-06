@@ -7,9 +7,9 @@ import { MatInputModule } from '@angular/material/input';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { finalize } from 'rxjs';
-import { AuthService } from '@orange/core';
-import { SiteService } from '@orange/core';
-import { emailValidator } from '@orange/shared';
+import { AuthService } from '@orange/core/auth';
+import { SiteService } from '@orange/core/services';
+import { emailValidator } from '@orange/shared/validators';
 
 @Component({
   selector: 'app-forgot-password',

@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { signal } from '@angular/core';
 
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {

@@ -8,15 +8,15 @@ import { MatInputModule } from '@angular/material/input';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { finalize } from 'rxjs';
-import { AuthService } from '@orange/core';
-import { SiteService } from '@orange/core';
+import { AuthService } from '@orange/core/auth';
+import { SiteService } from '@orange/core/services';
 import {
   PASSWORD_NUMBER_PATTERN,
   PASSWORD_SPECIAL_CHARACTER_PATTERN,
   PASSWORD_UPPERCASE_PATTERN,
   STRONG_PASSWORD_PATTERN,
-} from '@orange/shared';
-import { emailValidator } from '@orange/shared';
+} from '@orange/shared/constants';
+import { emailValidator } from '@orange/shared/validators';
 
 @Component({
   selector: 'app-reset-password',

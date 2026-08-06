@@ -1,5 +1,5 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
-import { Category } from '@orange/models';
+import { Category } from '@orange/core/models';
 import {
   InsurancePlan,
   MobilePlan,
@@ -7,7 +7,7 @@ import {
   ProductConfigure,
   ProductFilters,
   ProductSort,
-} from '@orange/models';
+} from '@orange/core/models';
 
 export const ProductActions = createActionGroup({
   source: 'Products',

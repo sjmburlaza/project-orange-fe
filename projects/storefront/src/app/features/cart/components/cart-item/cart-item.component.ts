@@ -9,11 +9,11 @@ import {
 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslatePipe } from '@ngx-translate/core';
-import { CartItem } from '@orange/models';
-import { ConfirmDialogComponent } from '@orange/ui';
-import { QuantitySelectorComponent } from '@orange/ui';
-import { IconColorPipe } from '@orange/shared';
-import { IconPipe } from '@orange/shared';
+import { CartItem } from '@orange/core/models';
+import { ConfirmDialogComponent } from '@orange/ui/confirm-dialog';
+import { QuantitySelectorComponent } from '@orange/ui/quantity-selector';
+import { IconColorPipe } from '@orange/shared/pipes';
+import { IconPipe } from '@orange/shared/pipes';
 
 @Component({
   selector: 'app-cart-item',

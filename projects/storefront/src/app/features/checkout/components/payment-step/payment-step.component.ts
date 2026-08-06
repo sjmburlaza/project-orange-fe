@@ -20,14 +20,14 @@ import {
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
-import { DynamicField, Option } from '@orange/models';
+import { DynamicField, Option } from '@orange/core/models';
 import { TranslatePipe } from '@ngx-translate/core';
 import {
   PaymentConfirmation,
   PaymentIntent,
   PaymentStepValue,
-} from '@orange/models';
-import { SiteService } from '@orange/core';
+} from '@orange/core/models';
+import { SiteService } from '@orange/core/services';
 import {
   PaymentMethodFormComponent,
   PaymentShellFormGroup,

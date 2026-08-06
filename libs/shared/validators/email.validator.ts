@@ -1,5 +1,5 @@
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
-import { EMAIL_ADDRESS_PATTERN } from '../constants/regex.constants';
+import { EMAIL_ADDRESS_PATTERN } from '@orange/shared/constants';
 
 export function emailValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {

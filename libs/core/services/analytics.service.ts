@@ -6,10 +6,10 @@ import {
   AnalyticsDashboard,
   AnalyticsDashboardPeriod,
   AnalyticsEvent,
-} from '@orange/models';
-import { Cart } from '@orange/models';
-import { OrderConfirmation } from '@orange/models';
-import { Product } from '@orange/models';
+} from '@orange/core/models';
+import { Cart } from '@orange/core/models';
+import { OrderConfirmation } from '@orange/core/models';
+import { Product } from '@orange/core/models';
 import {
   cartItemToAnalyticsItem,
   createEmptyDashboard,

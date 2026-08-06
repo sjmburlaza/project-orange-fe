@@ -2,8 +2,8 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { catchError, map, of } from 'rxjs';
-import { normalizeSiteCode, SiteConfig } from '../i18n/sites';
-import { SiteService } from '../services/site.services';
+import { normalizeSiteCode, SiteConfig } from '@orange/core/i18n';
+import { SiteService } from '@orange/core/services';
 
 export const siteGuard: CanActivateFn = (route) => {
   const router = inject(Router);

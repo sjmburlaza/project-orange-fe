@@ -10,9 +10,9 @@ import {
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 import { catchError, map, Observable, of, take } from 'rxjs';
-import { SiteCode, SiteConfig } from '@orange/core';
-import { CountryDetectionService } from '@orange/core';
-import { SiteService } from '@orange/core';
+import { SiteCode, SiteConfig } from '@orange/core/i18n';
+import { CountryDetectionService } from '@orange/core/services';
+import { SiteService } from '@orange/core/services';
 
 @Component({
   selector: 'app-country-entry',

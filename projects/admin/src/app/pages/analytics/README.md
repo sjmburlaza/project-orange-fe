@@ -41,8 +41,8 @@ Primary implementation files:
 | Shared tab math | `projects/admin/src/app/pages/analytics/components/dashboard-tab.utils.ts` |
 | Shared chart options | `projects/admin/src/app/pages/analytics/components/dashboard-chart.utils.ts` |
 | Reusable chart wrappers | `projects/admin/src/app/pages/analytics/charts/` |
-| Analytics models | `@orange/models` (`libs/models/analytics.model.ts`) |
-| Analytics client service | `@orange/core` (`libs/core/services/analytics.service.ts`) |
+| Analytics models | `@orange/core/models` (`libs/core/models/analytics.model.ts`) |
+| Analytics client service | `@orange/core/services` (`libs/core/services/analytics.service.ts`) |
 | Empty dashboard helpers | `libs/core/services/analytics.helpers.ts` |
 | Local mock API | `mock-api/server.cjs` |
 | Tab unit test fixtures | `projects/admin/src/app/pages/analytics/components/dashboard-tab.spec-fixtures.ts` |

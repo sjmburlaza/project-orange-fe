@@ -8,7 +8,7 @@ import {
   LoginDto,
   RegisterDto,
   ResetPasswordDto,
-} from '@orange/models';
+} from '@orange/core/models';
 
 @Injectable({
   providedIn: 'root',

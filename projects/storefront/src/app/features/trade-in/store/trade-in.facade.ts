@@ -5,7 +5,7 @@ import {
   UpdateTradeInStepOneRequest,
   UpdateTradeInStepThreeRequest,
   UpdateTradeInStepTwoRequest,
-} from '@orange/models';
+} from '@orange/core/models';
 import { TradeInActions } from './trade-in.actions';
 import {
   selectBrands,

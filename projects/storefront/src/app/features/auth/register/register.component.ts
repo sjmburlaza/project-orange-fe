@@ -7,16 +7,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AuthService } from '@orange/core';
-import { emailValidator } from '@orange/shared';
+import { AuthService } from '@orange/core/auth';
+import { emailValidator } from '@orange/shared/validators';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { finalize } from 'rxjs';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import {
   PASSWORD_NUMBER_PATTERN,
   PASSWORD_SPECIAL_CHARACTER_PATTERN,
   PASSWORD_UPPERCASE_PATTERN,
-} from '@orange/shared';
+} from '@orange/shared/constants';
 
 @Component({
   selector: 'app-register',

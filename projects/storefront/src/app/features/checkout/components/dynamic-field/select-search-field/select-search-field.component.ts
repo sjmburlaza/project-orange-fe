@@ -14,7 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { distinctUntilChanged, Subject, switchMap } from 'rxjs';
-import { DynamicField, Option } from '@orange/models';
+import { DynamicField, Option } from '@orange/core/models';
 import { OptionsService } from 'src/app/features/checkout/services/options.service';
 import { TranslatePipe } from '@ngx-translate/core';
 

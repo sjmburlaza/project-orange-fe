@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { firstValueFrom, of } from 'rxjs';
 
-import { Product } from '@orange/models';
+import { Product } from '@orange/core/models';
 import { ProductActions } from 'src/app/features/products/store/products.actions';
 import { ProductListComponent } from './product-list.component';
 import providers from 'src/test-providers';

@@ -14,11 +14,11 @@ import {
   PaymentConfirmation,
   PaymentConfirmationStatus,
   PaymentIntent,
-} from '@orange/models';
+} from '@orange/core/models';
 import {
   HYPHEN_PATTERN,
   PAYMENT_ENDPOINT_PATTERN,
-} from '@orange/shared';
+} from '@orange/shared/constants';
 
 @Injectable()
 export class MockPaymentInterceptor implements HttpInterceptor {

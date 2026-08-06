@@ -11,7 +11,7 @@ import {
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import {
   catchError,
   debounceTime,

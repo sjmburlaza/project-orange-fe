@@ -1,4 +1,4 @@
-import { Addon } from '@orange/models';
+import { Addon } from '@orange/core/models';
 
 export interface AddonDialogData {
   productId: number;

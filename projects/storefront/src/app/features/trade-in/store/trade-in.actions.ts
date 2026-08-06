@@ -10,7 +10,7 @@ import {
   UpdateTradeInStepOneRequest,
   UpdateTradeInStepThreeRequest,
   UpdateTradeInStepTwoRequest,
-} from '@orange/models';
+} from '@orange/core/models';
 
 export const TradeInActions = createActionGroup({
   source: 'Trade In',

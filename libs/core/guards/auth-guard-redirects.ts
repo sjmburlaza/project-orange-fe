@@ -1,6 +1,6 @@
 import { inject, InjectionToken } from '@angular/core';
 import { Router, UrlTree } from '@angular/router';
-import { SiteService } from '../services/site.services';
+import { SiteService } from '@orange/core/services';
 
 export interface AuthGuardRedirects {
   loginUrlTree(router: Router, returnUrl: string): UrlTree;

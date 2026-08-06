@@ -3,14 +3,14 @@ import { Component, inject } from '@angular/core';
 import { MatAnchor } from '@angular/material/button';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SiteService } from '@orange/core';
+import { SiteService } from '@orange/core/services';
 import { CartFacade } from 'src/app/features/cart/store/cart.facade';
 import { AcceptedPaymentsComponent } from 'src/app/features/common/accepted-payments/accepted-payments.component';
 import { RecommendedProductsComponent } from 'src/app/features/common/recommended-products/recommended-products.component';
 import { FooterComponent } from 'src/app/layout/footer/footer.component';
 import { HeaderComponent } from 'src/app/layout/header/header.component';
 import { SidebarComponent } from 'src/app/layout/sidebar/sidebar.component';
-import { IconPipe } from '@orange/shared';
+import { IconPipe } from '@orange/shared/pipes';
 
 @Component({
   selector: 'app-checkout-layout',

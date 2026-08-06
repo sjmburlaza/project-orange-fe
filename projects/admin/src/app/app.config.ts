@@ -13,7 +13,7 @@ import { provideRouter } from '@angular/router';
 import {
   AUTH_GUARD_REDIRECTS,
   AuthGuardRedirects,
-} from '@orange/core';
+} from '@orange/core/guards';
 
 import { routes } from './app.routes';
 

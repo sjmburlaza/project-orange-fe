@@ -5,16 +5,16 @@ import {
   Input,
   Output,
 } from '@angular/core';
-import { ProductSort } from '@orange/models';
+import { ProductSort } from '@orange/core/models';
 import {
   RangeSliderComponent,
   RangeValue,
-} from '@orange/ui';
+} from '@orange/ui/range-slider';
 
 import {
   FilterDropdownComponent,
   FilterDropdownOption,
-} from '@orange/ui';
+} from '@orange/ui/filter-dropdown';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslatePipe } from '@ngx-translate/core';
 

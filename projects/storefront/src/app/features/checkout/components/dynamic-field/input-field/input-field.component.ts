@@ -3,7 +3,7 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { DynamicField } from '@orange/models';
+import { DynamicField } from '@orange/core/models';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
