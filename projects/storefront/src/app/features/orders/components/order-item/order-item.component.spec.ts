@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import { provideTranslateService } from '@ngx-translate/core';
-import { OrderItem } from '@orange/core/models';
+import { OrderItem, OrderStatus } from '@orange/core/models';
 import { SiteService } from '@orange/core/services';
 
 import { OrderItemComponent } from './order-item.component';
@@ -151,5 +151,81 @@ describe('OrderItemComponent', () => {
   it('uses cart-style fallback icons for product images and add-ons', () => {
     expect(fixture.nativeElement.querySelector('.bi-phone')).toBeTruthy();
     expect(fixture.nativeElement.querySelector('.bi-shield-check')).toBeTruthy();
+  });
+
+  it('maps every order status to its visual tone', () => {
+    const statusTones: [OrderStatus, string][] = [
+      ['pending_payment', 'warning'],
+      ['confirmed', 'success'],
+      ['processing', 'info'],
+      ['packed', 'info'],
+      ['shipped', 'info'],
+      ['out_for_delivery', 'info'],
+      ['delivered', 'success'],
+      ['cancelled', 'neutral'],
+      ['payment_failed', 'error'],
+      ['refunded', 'info'],
+      ['returned', 'neutral'],
+    ];
+
+    for (const [orderStatus, tone] of statusTones) {
+      fixture.componentRef.setInput('order', { ...order, orderStatus });
+      fixture.detectChanges();
+
+      expect(component.orderStatusTone()).toBe(tone);
+    }
+  });
+
+  it('derives pending delivery details, product fallbacks, and actions', () => {
+    const pendingOrder: OrderItem = {
+      ...order,
+      orderStatus: 'pending_payment',
+      paymentStatus: 'pending',
+      deliveredAt: undefined,
+      invoiceUrl: undefined,
+      items: [
+        {
+          ...order.items[0],
+          addons: undefined,
+          itemSpecs: [{ name: 'Optional', value: '' }],
+        },
+      ],
+    };
+    fixture.componentRef.setInput('order', pendingOrder);
+    fixture.detectChanges();
+
+    expect(component.deliveryInfo()).toEqual({
+      date: pendingOrder.deliveryEstimate,
+      isDelivered: false,
+      label: 'orders.lookup.estimatedDeliveryPrefix',
+    });
+    expect(component.displayItems()[0]).toMatchObject({
+      addedAddons: [],
+      specs: '',
+    });
+    expect(component.orderActions()).toEqual({
+      canCancel: true,
+      canChangePayment: true,
+      canPayNow: true,
+      canTrack: false,
+      canBuyAgain: false,
+      canReview: false,
+      canReturn: false,
+      canDownloadInvoice: false,
+    });
+
+    fixture.componentRef.setInput('order', {
+      ...pendingOrder,
+      orderStatus: 'shipped',
+      paymentStatus: 'paid',
+    });
+    expect(component.orderActions().canTrack).toBe(true);
+
+    fixture.componentRef.setInput('order', {
+      ...pendingOrder,
+      orderStatus: 'cancelled',
+      paymentStatus: 'cancelled',
+    });
+    expect(component.orderActions().canBuyAgain).toBe(true);
   });
 });

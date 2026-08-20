@@ -11,4 +11,11 @@ describe('IconPipe', () => {
 
     expect(pipe.transform('Monitors')).toBe('bi bi-display');
   });
+
+  it('returns the fallback icon for missing and unknown categories', () => {
+    const pipe = new IconPipe();
+
+    expect(pipe.transform(undefined)).toBe('bi bi-box');
+    expect(pipe.transform('unknown category')).toBe('bi bi-box');
+  });
 });
